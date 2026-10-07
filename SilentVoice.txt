@@ -1,0 +1,84 @@
+SilentVoice/
+│
+├── .venv/                          # Virtual environment
+│
+├── app.py                          # Main Flask application
+│
+├── hand_tracker.py                 # Hand & finger detection logic
+│
+├── voice_engine.py                 # Text-to-speech handler
+│
+├── requirements.txt                # Dependencies
+│
+├── .flaskenv                       # Flask environment variables
+│
+├── templates/                      # HTML templates
+│   ├── index.html                  # Main web interface
+│   └── emergency.html              # Emergency alert page
+│
+├── static/                         # Static files
+│   ├── css/
+│   │   └── style.css               # Styling
+│   └── js/
+│       └── script.js               # Frontend logic
+│
+├── logs/                           # Message history
+│   └── messages.csv                # Log of all communications
+│
+└── README.md                       # Project documentation
+
+
+
+
+
+
+
+SilentVoice/
+├── data_collection.py    # Collect hand landmark samples
+├── train_model.py        # Train classifier
+├── gesture_model.pkl     # Saved model
+├── hand_tracker.py        # Same as before
+├── voice_engine.py        # Same as before
+├── app.py                 # Updated with model prediction
+└── templates/
+    └── dashboard.html     # Same as before
+
+
+
+    SilentVoice/
+├── models/                          # All trained models
+│   ├── __init__.py
+│   ├── gesture_model_v1.pkl        # First model (if needed)
+│   └── gesture_model_v2.pkl        # Corrected model
+│
+├── training/                        # Training scripts
+│   ├── __init__.py
+│   ├── collect_data.py             # Collect training data
+│   ├── train_model.py              # Train the model
+│   └── evaluate_model.py           # Test model accuracy
+│
+├── training_data/                   # Old data (optional keep)
+├── training_data_correct/           # New correct data
+│
+├── src/                            # Source code
+│   ├── __init__.py
+│   ├── hand_tracker.py
+│   ├── voice_engine.py
+│   └── gesture_predictor.py        # ML prediction wrapper
+│
+├── templates/
+│   └── dashboard.html
+│
+├── static/
+│   ├── css/
+│   │   └── style.css
+│   └── js/
+│       └── script.js
+│
+├── logs/
+│   └── messages.csv
+│
+├── app.py                          # Main Flask app
+├── config.py                       # Configuration
+├── requirements.txt
+└── README.md

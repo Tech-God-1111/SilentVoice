@@ -1,0 +1,11 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+logs/
+models/
+training_data/
+training_data_correct/
+*.task
+.idea/
